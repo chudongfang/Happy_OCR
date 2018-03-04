@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/edit_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="17dp"
+        android:textColor="@color/colorBlack"
+        android:text="编辑文本"
+        android:background="@color/colorWhite"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/line_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/edit_tv"
+        android:background="@color/colorDarkBlue"/>
+
+    <TextView
+        android:id="@+id/move_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="17dp"
+        android:textColor="@color/colorBlack"
+        android:text="移动至"
+        android:layout_below="@id/line_tv1"
+        android:background="@color/colorWhite"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/line_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/move_tv"
+        android:background="@color/colorDarkBlue"/>
+
+    <TextView
+        android:id="@+id/delete_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="17dp"
+        android:textColor="@color/colorBlack"
+        android:text="删除该项"
+        android:layout_below="@id/line_tv2"
+        android:background="@color/colorWhite"
+        android:gravity="center"/>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/content_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/title_tv"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/dialog_cancel_confirm_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/content_et">
+
+        <Button
+            android:id="@+id/dialog_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/dialog_confirm_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:layout_toLeftOf="@id/dialog_cancel_btn"
+            android:layout_marginLeft="70dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

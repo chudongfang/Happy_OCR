@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="myapp.lenovo.viewpager.MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ocr_rb"
+            android:text="识别"
+            style="@style/myRadioButton"/>
+
+        <RadioButton
+            android:id="@+id/document_rb"
+            android:checked="true"
+            android:text="文档"
+            style="@style/myRadioButton"/>
+
+        <RadioButton
+            android:id="@+id/practice_rb"
+            android:text="训练"
+            style="@style/myRadioButton"/>
+
+        <RadioButton
+            android:id="@+id/me_rb"
+            android:text="我"
+            style="@style/myRadioButton"/>
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/radio_group">
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

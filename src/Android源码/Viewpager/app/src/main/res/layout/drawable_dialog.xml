@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="识别图片"
+            android:textColor="@color/colorOrange"
+            android:textSize="19dp" />
+
+        <TextView
+            android:id="@+id/exit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:layout_toRightOf="@id/title_tv"
+            android:text="关闭"
+            android:textColor="@color/colorOrange"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/line_tv"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_below="@id/title_layout"
+        android:background="@color/colorOrange" />
+
+    <ScrollView
+        android:id="@+id/drawable_sv"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/line_tv">
+
+        <ImageView
+            android:id="@+id/drawable_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"/>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/confirm_btn"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/drawable_sv"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/edit_btn"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp" />
+
+</RelativeLayout>

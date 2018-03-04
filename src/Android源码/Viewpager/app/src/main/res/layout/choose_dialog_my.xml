@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/choose_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/choose_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="移动至"
+            android:textColor="@color/colorDarkBlue"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title_line_tv"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_below="@id/choose_title_layout"
+        android:background="@color/colorDarkBlue"/>
+
+    <ListView
+        android:id="@+id/choose_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/colorDarkGray"
+        android:dividerHeight="0.5dp"
+        android:headerDividersEnabled="false"
+        android:footerDividersEnabled="false"
+        android:layout_below="@id/title_line_tv">
+
+    </ListView>
+
+</RelativeLayout>

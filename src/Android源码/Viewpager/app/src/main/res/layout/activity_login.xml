@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="myapp.lenovo.viewpager.LoginActivity"
+    android:background="@color/colorBackgroundDarkBlue">
+
+    <ImageView
+        android:id="@+id/logo_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="130dp"
+        android:background="@drawable/logo"/>
+
+    <LinearLayout
+        android:id="@+id/login_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/account_et"
+            android:layout_width="290dp"
+            android:layout_height="45dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp"
+            android:hint="用户名/手机/邮箱"
+            android:textColorHint="@color/colorDarkGray"
+            android:background="@drawable/login_background"/>
+
+        <EditText
+            android:id="@+id/password_et"
+            android:layout_width="290dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:hint="密码"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp"
+            android:textColorHint="@color/colorDarkGray"
+            android:inputType="textPassword"
+            android:background="@drawable/login_background"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/entry_btn"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/login_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="登录"
+        android:textColor="@color/colorBlack"
+        android:textSize="18dp"
+        android:background="@color/colorDarkBlue"/>
+
+    <TextView
+        android:id="@+id/forget_password_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/entry_btn"
+        android:layout_below="@id/entry_btn"
+        android:text="忘记密码"
+        android:textSize="15dp"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:id="@+id/register_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/entry_btn"
+        android:layout_below="@id/entry_btn"
+        android:text="注册"
+        android:textSize="15dp"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:id="@+id/phone_entry_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceButton"
+        android:layout_below="@id/entry_btn"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:text="手机验证码一键登录"
+        android:textSize="15dp"
+        android:textColor="@color/colorDarkBlue"/>
+
+    <RelativeLayout
+        android:id="@+id/else_login_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/line_left_tv"
+            android:layout_width="100dp"
+            android:layout_height="0.5dp"
+            android:background="@color/colorDarkGray"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/else_login_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/line_left_tv"
+            android:layout_centerVertical="true"
+            android:text="其他方式登录"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/line_right_tv"
+            android:layout_width="100dp"
+            android:layout_height="0.5dp"
+            android:layout_toRightOf="@id/else_login_tv"
+            android:layout_centerVertical="true"
+            android:background="@color/colorDarkGray"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_logo_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/else_login_layout"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageButton
+            android:id="@+id/qq_logo_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/qq_selector"/>
+
+        <ImageButton
+            android:id="@+id/weibo_logo_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/qq_logo_iv"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/weibo_selector"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
